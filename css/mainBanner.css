@@ -1,0 +1,70 @@
+/* mainBanner.css */
+
+#mainBanner {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  background: rgb(150, 194, 150);
+}
+
+/* prev/next Button */
+#prevNextBtnGroup {
+  position: relative;
+  z-index: 10;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 210px;
+  left: 4%;
+  opacity: 0.6;
+  cursor: pointer;
+  color: red;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 210px;
+  right: 4%;
+  opacity: 0.6;
+  cursor: pointer;
+  color: red;
+}
+
+#prevBtn:hover {
+  opacity: 0.8;
+}
+#nextBtn:hover {
+  opacity: 0.8;
+}
+
+/* slideBanner */
+#slideBannerGroup {
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#slideBanner {
+  position: relative;
+  width: 7500px;
+  height: 530px;
+}
+
+.bannerItems {
+  float: left;
+  width: 1500px;
+  height: 530px;
+}
+
+/* 배너 하단 control Button */
+#bannerControlGroup {
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
+}
+
+.bannerControl {
+  margin: 15px 5px 0 5px;
+}
