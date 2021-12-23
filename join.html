@@ -1,43 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/mainBanner.css">
-    <link rel="stylesheet" href="./css/section.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
-    <script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/mainBanner.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
-    </head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/join.css">
+<link rel="stylesheet" href="./css/media.css">
+<title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/formCheck .js"></script>
+<script src="./js/main.js"></script>
+<script src="https://kit.fontawesome.com/2d323a629b.js"crossorigin="anonymous"></script>
+</head>
 <body>
-    <div id="wrap">
-        <header>
-            <div id="header">
-                <div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
-                <div id="userManageBtn">
-                    <a href="./sub_myFeed.html">My Feed</a>
-                    <a href="./join.html">Join</a>
-                    <a href="./login.html">Login</a>
+	<div id="wrap">
+	<!-- ***********************header*************** -->
+		<div id="header">
+			<div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
+			<div id="userManageBtn">
+				<a href="mbti.html">MBTI</a>
+				<a href="./sub_myFeed.html">My Feed</a>
+				<a href="./join.html">Join</a>
+				<a href="./login.html">Login</a>
+			</div>
+		</div>
+		<!-- ****************section***************** -->
+		<section id="section1">
+			<div id="joinBox">
+				<h2 align="center">회원가입</h2>
+				<br>
+				<hr>
+				<form name="joinForm" id="joinForm" method="post" action="index.html">
+					<div class="container">
+						<div class="insert">
+							<table>
+								<br>
+								<tr>
+									<td class="col1">성명</td>
+									<td class="col2">
+										<input type="text" name="name"  maxlength="5" id="name" placeholder="성명">
+										<p id="nameError" class="errMsg" value=""></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">아이디</td>
+									<td class="col2"><input type="text" name="id" maxlength="10" id="idCheck" value="" placeholder="아이디">
+										<input class='btn1' type="button" value="중복확인" onclick="">
+										<p id="idError" class="errMsg" value=""></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">비밀번호</td>
+									<td class="col2"><input type="password" name="pwd" maxlength="16" id="password" placeholder="비밀번호">
+										<p id="pwError" class="errMsg">
+											※ 비밀번호는 <span class="num">문자, 숫자, 특수문자(~!@#$%^&*)의 조합
+												10 ~ 16자리</span>로 입력하세요.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">비밀번호 확인</td>
+									<td class="col2"><input type="password" name="pwdCheck" maxlength="16" id="passwordCheck" placeholder="비밀번호 확인"></td>
+								</tr>
+								<tr>
+									<td class="col1">이메일</td>
+									<td class="col2"><input type="text" name="mailid">
+										<span class="a">@</span> <input type="text" name="email">
+										<select name="mailslc">
+											<option value="self" selected>직접입력</option>
+											<option value="naver">naver.com</option>
+											<option value="gm">gmail.com</option>
+											<option value="da">daum.com</option>
+											<option value="yah">yahoo.com</option>
+									</select> <input class='btn2' type="button" value="이메일 중복확인" onclick="">
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">이메일 수신 여부</td>
+									<td class="col2">
+										<input type="radio" name="emailRcv" value="yes" style="margin-left:10px;" checked>예&nbsp;&nbsp;
+										<input type="radio" name="emailRcv" value="no">아니오
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">생년월일</td>
+									<td class="col2"><input type="text" name="birthYear" id="birthYear"size="4" maxlength="4">년 
+									<select name="birthMonth">
+											<option value="1">1
+											<option value="2">2
+											<option value="4">3
+											<option value="4">4
+											<option value="5">5
+											<option value="6">6
+											<option value="7">7
+											<option value="8">8
+											<option value="9">0
+											<option value="10">10
+											<option value="11">11
+											<option value="12">12
+									</select> 월 
+									<select name="birthDay">
+											<option value="1">1
+											<option value="2">2
+											<option value="4">3
+											<option value="4">4
+											<option value="5">5
+											<option value="6">6
+											<option value="7">7
+											<option value="8">8
+											<option value="9">0
+											<option value="10">10
+											<option value="11">11
+											<option value="12">12
+											<option value="13">13
+											<option value="14">14
+											<option value="15">15
+											<option value="16">16
+											<option value="17">17
+											<option value="18">18
+											<option value="19">19
+											<option value="20">20
+											<option value="21">21
+											<option value="22">22
+											<option value="23">23
+											<option value="24">24
+											<option value="25">25
+											<option value="26">26
+											<option value="27">27
+											<option value="28">28
+											<option value="29">29
+											<option value="30">30
+											<option value="31">31
+									</select> 일 <input type="radio" name="solar" value="양력" checked>양력
+										<input type="radio" name="solar" value="음력">음력
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">휴대폰번호</td>
+								<td class="col2">
+								<input type="text" name="hp1" id="hp1" size="3" maxlength="3">
+										- <input type="text" name="hp2" id="hp2" size="4" maxlength="4">
+										- <input type="text" name="hp3" id="hp3" size="4" maxlength="4">
+								</td>
+								<tr>
+								<td class="col1">주소 </td>
+								<td class="col2"><input type="text" name="zipcode" id="zipcode" readonly> 
+								<input type="button" class="btn2" value="우편번호찾기"><br>
+								<input type="text" name="address1" id="address1" size="40"  readonly><br>
+								<input type="text" name="address2" id="address2" size="40" placeholder="상세 주소 입력">
+								</td>
+							</tr>
+							</tr>
+								<tr>
+									<td class="col1">MBTI</td>
+									<td id="col2" align="center" >
+									<input type="radio" name="mbti" value="ISTJ" id="mbti1">ISTJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISFJ" id="mbti2">ISFJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESFJ" id="mbti3">ESFJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESTJ" id="mbti4">ESTJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISTJ" id="mbti5">ISFP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISFJ" id="mbti6">ISTP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESFJ" id="mbti7">ESFP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESTJ" id="mbti8">ESTP &nbsp;&nbsp;&nbsp;
+									<br> 
+									<input type="radio" name="mbti" value="ISTJ" id="mbti9">ENFP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISFJ" id="mbti10">INFJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESFJ" id="mbti11">INFP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESTJ" id="mbti12">ENFJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISTJ" id="mbti13">INTP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ISFJ" id="mbti14">ENTJ &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESFJ" id="mbti15">ENTP &nbsp;&nbsp;&nbsp;
+									<input type="radio" name="mbti" value="ESTJ" id="mbti16">INTJ &nbsp;&nbsp;&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td class="col1">키워드 선택</td>
+									<td>
+									<input class='btn2'type="button" value="키워드 검색" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+									<div id="light" class="white_content"> 
+									<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+									<img src="image/exit.png" style="width:20px;"></img>
+									<hr>
+									<button class='btn5'>이론적</button>&nbsp;&nbsp;
+									<button class='btn5'>지식</button>&nbsp;&nbsp;
+									<button class='btn5'>미래 지향적</button>&nbsp;&nbsp;
+									<button class='btn5'>츤데레</button>&nbsp;&nbsp;
+									<button class='btn5'>계획</button>&nbsp;&nbsp;
+									<button class='btn5'>냉소적</button>&nbsp;&nbsp;
+									<button class='btn5'>해결</button>&nbsp;&nbsp;
+									<button class='btn5'>확고한</button>&nbsp;&nbsp;
+									<button class='btn5'>지적 호기심</button>&nbsp;&nbsp;
+									<button class='btn5'>회의주의</button>&nbsp;&nbsp;
+									<button class='btn5'>창조적</button>&nbsp;&nbsp;
+									<button class='btn5'>겉바속촉</button>&nbsp;&nbsp;
+									<button class='btn5'>논리적</button>&nbsp;&nbsp;
+									<button class='btn5'>창의적</button>&nbsp;&nbsp;
+									<button class='btn5'>권력지향적</button>&nbsp;&nbsp;
+									<button class='btn5'>독립적</button>&nbsp;&nbsp;
+									<button class='btn5'>이론적</button>&nbsp;&nbsp;
+									<button class='btn5'>분석적</button>&nbsp;&nbsp;
+									<button class='btn5'>마이웨이</button>&nbsp;&nbsp;
+									<button class='btn5'>게으름</button>&nbsp;&nbsp;
+									<button class='btn5'>똑똑함</button>&nbsp;&nbsp;
+									<button class='btn5'>자기결정</button>&nbsp;&nbsp;
+									<button class='btn5'>진지충</button>&nbsp;&nbsp;
+									<button class='btn5'>나르시즘</button>&nbsp;&nbsp;
+									<button class='btn5'>자신감</button>&nbsp;&nbsp;
+									<button class='btn5'>카리스마</button>&nbsp;&nbsp;
+									<button class='btn5'>워커홀릭</button>&nbsp;&nbsp;
+									<button class='btn5'>명언</button>&nbsp;&nbsp;
+									<button class='btn5'>섹시함</button>&nbsp;&nbsp;
+									<button class='btn5'>전략</button>&nbsp;&nbsp;
+									<button class='btn5'>무자비</button>&nbsp;&nbsp;
+									<button class='btn5'>해결</button>&nbsp;&nbsp;
+									<button class='btn5'>꼰대파이터</button>&nbsp;&nbsp;
+									<button class='btn5'>자기계발</button>&nbsp;&nbsp;
+									<button class='btn5'>지배적</button>&nbsp;&nbsp;
+									<button class='btn5'>단호박</button>&nbsp;&nbsp;
+									<button class='btn5'>합리적</button>&nbsp;&nbsp;
+									<button class='btn5'>솔직함</button>&nbsp;&nbsp;
+									<button class='btn5'>환불 원정대</button>&nbsp;&nbsp;
+									<button class='btn5'>냉철</button>&nbsp;&nbsp;
+									<button class='btn5'>임기응변</button>&nbsp;&nbsp;
+									<button class='btn5'>자기애</button>&nbsp;&nbsp;
+									<button class='btn5'>파이터</button>&nbsp;&nbsp;
+									<button class='btn5'>논쟁</button>&nbsp;&nbsp;
+									<button class='btn5'>키보드 워리어</button>&nbsp;&nbsp;
+									<button class='btn5'>독립심</button>&nbsp;&nbsp;
+									<button class='btn5'>개방적</button>&nbsp;&nbsp;
+									<button class='btn5'>YOLO</button>&nbsp;&nbsp;
+									<button class='btn5'>정직함</button>&nbsp;&nbsp;
+									<button class='btn5'>외유내강</button>&nbsp;&nbsp;
+									<button class='btn5'>도어슬램</button>&nbsp;&nbsp;
+									<button class='btn5'>선</button>&nbsp;&nbsp;
+									<button class='btn5'>겉차속따</button>&nbsp;&nbsp;
+									<button class='btn5'>통찰력</button>&nbsp;&nbsp;
+									<button class='btn5'>신념</button>&nbsp;&nbsp;
+									<button class='btn5'>가면</button>&nbsp;&nbsp;
+									<button class='btn5'>완벽 주의</button>&nbsp;&nbsp;
+									<button class='btn5'>성실함</button>&nbsp;&nbsp;
+									<button class='btn5'>옹호자</button>&nbsp;&nbsp;
+									<button class='btn5'>감수성</button>&nbsp;&nbsp;
+									<button class='btn5'>관대함</button>&nbsp;&nbsp;
+									<button class='btn5'>개방적</button>&nbsp;&nbsp;
+									<button class='btn5'>자기비판적</button>&nbsp;&nbsp;
+									<button class='btn5'>비실용적</button>&nbsp;&nbsp;
+									<button class='btn5'>창의적</button>&nbsp;&nbsp;
+									<button class='btn5'>열정적</button>&nbsp;&nbsp;
+									<button class='btn5'>이상주의</button>&nbsp;&nbsp;
+									<button class='btn5'>헌신적</button>&nbsp;&nbsp;
+									<button class='btn5'>갈등회피</button>&nbsp;&nbsp;
+									<button class='btn5'>개인주의</button>&nbsp;&nbsp;
+									<button class='btn5'>로맨틱</button>&nbsp;&nbsp;
+									<button class='btn5'>아싸</button>&nbsp;&nbsp;
+									<button class='btn5'>외교적</button>&nbsp;&nbsp;
+									<button class='btn5'>배려심</button>&nbsp;&nbsp;
+									<button class='btn5'>겸손</button>&nbsp;&nbsp;
+									<button class='btn5'>애정결핍</button>&nbsp;&nbsp;
+									<button class='btn5'>조직적</button>&nbsp;&nbsp;
+									<button class='btn5'>칭찬봇</button>&nbsp;&nbsp;
+									<button class='btn5'>조력자</button>&nbsp;&nbsp;
+									
+									
+									</a></div>
+									<div id="fade" class="black_overlay"></div>
+									</td>
+									<td>
+									</td>
+								</tr>
+							<tr>
+								<td class="col1">동의</td>
+								<td>
+									<label><input type="checkbox" id="agreement1" value="모든약관" style="margin-left:10px;"> 모든 약관에 동의</label>&nbsp;&nbsp;
+									<label><input type="checkbox" id="agreement2" value="개인정보"> 개인 정보 이용 동의 (선택)</label>
+								</td>
+							</tr>
+							</table>
+						</div>
+
+						<div class="create">
+							<input class="btn3" type="submit" value="가입취소" onclick="">
+							<input class="btn4" type="submit" value="회원가입" onclick="formCheck(this.form)">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+<!-- ***********************footer*********************** -->
+		<footer>
+			<div id="footer">
+                <div>
+                    <div id="toTop">
+                        <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                    </div>
+                    <div id="chat">
+                        <a href="chatbot.html"><i id="chatbot" class="far fa-comment-alt"></i></a>
+                    </div>
                 </div>
-            </div>
-        </header>
-
-        <section>
-            <article>회원가입</article>
-        </section>
-
-        <footer>
-            <div id="footer">
                 <div id="footerInfo">
-                    <h2>KIRRIKKIRI's 고객센터</h2>
-                </div>
-                <div id="toTop">
-                    <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                    <div id="info1">
+                        <h2>KIRRIKKIRI's 고객센터</h2>
+                        <h3>1588-7272</h3>
+                    </div>
+                    <div id="info2">
+                        상담시간&nbsp;|&nbsp;
+                        평일 10:00 ~ 17:00&nbsp;|&nbsp;
+                        주말, 공휴일 휴무&nbsp;|&nbsp;
+                        점심시간 12:00 ~ 13:00
+                    </div>
+                    <div id="info3">
+                        <a href="#">브랜드 스토리</a>&nbsp;|&nbsp;
+                        <a href="#">회사 소개</a>&nbsp;|&nbsp;
+                        <a href="#">채용 정보 </a>&nbsp;|&nbsp;
+                        <a href="#">이용 약관</a>&nbsp;|&nbsp;
+                        <a href="#">개인 정보 처리 방침</a>&nbsp;|&nbsp;
+                        <a href="#">이용 안내</a>&nbsp;|&nbsp;
+                        <a href="#">공지사항</a>&nbsp;|&nbsp;
+                        <a href="#">고객센터</a>&nbsp;|&nbsp;
+                        <a href="#">고객의 소리</a>&nbsp;|&nbsp;
+                        <a href="#">제휴/광고 문의</a>
+                    </div>
+                    <div id="info4">
+                        상호명 : (주) KIRRIKKIRI<br/>
+                        이메일(고객 문의) : kirrikkiri@mbti.com<br/>
+                        주소 : 코끼리아저시 코가손이구 727-2
+                    </div>
                 </div>
             </div>
         </footer>

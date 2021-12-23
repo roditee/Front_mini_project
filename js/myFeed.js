@@ -38,4 +38,9 @@ $(function() {
 	$('#musicPause').on('click', function() {
 		myMusic.pause();
 	});
+
+	/************* seeMore ************/
+	$('#seeMore').on('click', function() {
+		alert('피드의 마지막 입니다.');
+	})
 });

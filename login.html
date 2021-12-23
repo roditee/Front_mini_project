@@ -10,6 +10,9 @@
     <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/chatbot.js"></script>
     </head>
 <body>
     <div id="wrap">
@@ -29,7 +32,7 @@
                 <img id="loginLogoImg" src="./image/KIRRI.png"><span id="loginLogoText">Login</span>
             </div>
             <form id="loginForm" action="index.html">
-                <p id="loginError">ddddddddddddddd</p>
+                <p id="loginError"></p>
                 <input type="text" name="id" id="id" placeholder="아이디">
                 <input type="password" name="pw" id="pw" placeholder="비밀번호">
                 <input type="submit" name="submit" id="submit" value="로그인">
@@ -82,10 +85,11 @@
                 <div id="toTop">
                     <i id="toTopBtn" class="far fa-hand-point-up"></i>
                 </div>
+                <div id="chat">
+                    <i id="chatbot" class="far fa-comment-alt"></i>
+                </div>
             </div>
         </footer>
     </div>
 </body>
-<script src="js/main.js"></script>
-    <script src="js/login.js"></script>
 </html>

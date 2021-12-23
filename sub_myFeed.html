@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/myFeed.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/myFeed.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/chatbot.js"></script>
     <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
     </head>
 <body>
@@ -25,6 +28,61 @@
                 </div>
             </div>
         </header>
+
+        <nav>
+            <div class="menu-btn">
+                <div class="line line--1"></div>
+                <div class="line line--2"></div>
+                <div class="line line--3"></div>
+            </div>
+
+            <div class="nav-links">
+                <ul id="menuGroup">
+                    <li class="menu link"><a href="#">NOTICE</a>
+                        <ul class="hide">
+                            <li class="subMenu"><a href="./index.html">HOME</a></li>
+                            <li class="subMenu"><a href="#">공지사항</a></li>
+                            <li class="subMenu"><a href="#">EVENT</a></li>
+                            <li class="subMenu"><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu link"><a href="#">MBTI</a>
+                        <ul class="hide">
+                            <li class="subMenu"><a href="#">인기 게시글</a></li>
+                            <li class="subMenu"><a href="#">신규 게시글</a></li>
+                            <li class="subMenu"><a href="#">MBTI 유형별 특징</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu link"><a href="#">KIRRI NEWS</a>
+                        <ul class="hide">
+                            <li class="subMenu"><a href="#">BrandStory</a></li>
+                            <li class="subMenu"><a href="#">주요 사업</a></li>
+                            <li class="subMenu"><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu link"><a href="#">mbti메뉴</a>
+                        <ul class="hide">
+                            <li class="subMenu"><a href="#">INTJ</a></li>
+                            <li class="subMenu"><a href="#">INTP</a></li>
+                            <li class="subMenu"><a href="#">ENTJ</a></li>
+                            <li class="subMenu"><a href="#">ENTP</a></li>
+                            <li class="subMenu"><a href="#">INFJ</a></li>
+                            <li class="subMenu"><a href="#">INFP</a></li>
+                            <li class="subMenu"><a href="#">ENFJ</a></li>
+                            <li class="subMenu"><a href="#">ENFP</a></li>
+                            <li class="subMenu"><a href="#">ISTJ</a></li>
+                            <li class="subMenu"><a href="#">ISFJ</a></li>
+                            <li class="subMenu"><a href="#">ESTJ</a></li>
+                            <li class="subMenu"><a href="#">ESFJ</a></li>
+                            <li class="subMenu"><a href="#">ISTP</a></li>
+                            <li class="subMenu"><a href="#">ISFP</a></li>
+                            <li class="subMenu"><a href="#">ESTP</a></li>
+                            <li class="subMenu"><a href="#">ESFP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <section>
             <article>
@@ -158,6 +216,9 @@
                 </div>
                 <div id="toTop">
                     <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                </div>
+                <div id="chat">
+                    <i id="chatbot" class="far fa-comment-alt"></i>
                 </div>
             </div>
         </footer>

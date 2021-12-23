@@ -183,20 +183,20 @@
 
 #prevWish {
   position: absolute;
-  top: 80px;
+  top: 95px;
   left: 1%;
+  width: 50px;
   opacity: 0.6;
   cursor: pointer;
-  color: red;
 }
 
 #nextWish {
   position: absolute;
-  top: 80px;
+  top: 95px;
   right: 1%;
+  width: 50px;
   opacity: 0.6;
   cursor: pointer;
-  color: red;
 }
 
 #prevWish:hover {

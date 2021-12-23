@@ -10,7 +10,7 @@ window.onload = function() {
         // id 유효성 검사
 		if (id.value === ""){
 			errMsg.innerText = "아이디를 입력하세요."
-			errMsg.style.display = 'block';
+			errMsg.style.visibility = 'visible';
 			id.focus();
 			return false;
 		}
@@ -18,7 +18,7 @@ window.onload = function() {
         // pw 유효성 검사
 		if (pw.value === "") {
 			errMsg.innerText = "비밀번호를 입력하세요."
-			errMsg.style.display = 'block';
+			errMsg.style.visibility = 'visible';
 			pw.focus();
 			return false;
 		}
@@ -26,7 +26,7 @@ window.onload = function() {
         // id pw 일치 유효성 검사
         if (!(id.value === dbId && pw.value === dbPw)) {
             errMsg.innerText = "아이디 또는 비밀번호가 일치하지 않습니다."
-			errMsg.style.display = 'block';
+			errMsg.style.visibility = 'visible';
 			id.value = "";
             pw.value = "";
 			id.focus();

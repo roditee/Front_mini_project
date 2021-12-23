@@ -5,7 +5,7 @@
 
 #login {
   width: 530px;
-  height: 660px;
+  height: 720px;
   margin: 0 auto 90px auto;
   text-align: center;
   background-color: rgb(212, 212, 188);
@@ -19,7 +19,7 @@
 
 #loginLogoImg {
   width: 120px;
-  height: 90px;
+  height: 176px;
 }
 
 #loginLogoText {
@@ -29,14 +29,16 @@
 
 /************* login ************/
 #loginForm {
-  padding: 25px 30px 10px 30px;
+  padding: 0px 30px 35px 30px;
   width: 400px;
   margin: 0 auto;
 }
 
 #loginError {
   padding-bottom: 20px;
-  display: none;
+  visibility: hidden;
+  color: #d40000;
+  font-weight: bold;
 }
 
 #loginForm > input {
@@ -45,8 +47,8 @@
 
 #id,
 #pw {
-  width: 300px;
-  height: 30px;
+  width: 337px;
+  height: 60px;
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -88,4 +90,9 @@
   color: #3a3a3a;
   font-size: 38px;
   padding-right: 8px;
+}
+
+/* footer */
+#footer {
+  padding: 35px 150px;
 }
