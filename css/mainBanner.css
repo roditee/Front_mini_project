@@ -4,10 +4,11 @@
   position: relative;
   width: 100%;
   height: 570px;
-  background: rgb(150, 194, 150);
+  background: #f4f2f1;
+  z-index: -100;
 }
 
-/* prev/next Button */
+/************* prev/next Button ************/
 #prevNextBtnGroup {
   position: relative;
   z-index: 10;
@@ -15,8 +16,9 @@
 
 #prevBtn {
   position: absolute;
-  top: 210px;
-  left: 4%;
+  top: 240px;
+  left: 2%;
+  width: 65px;
   opacity: 0.6;
   cursor: pointer;
   color: red;
@@ -24,8 +26,9 @@
 
 #nextBtn {
   position: absolute;
-  top: 210px;
-  right: 4%;
+  top: 240px;
+  right: 2%;
+  width: 65px;
   opacity: 0.6;
   cursor: pointer;
   color: red;
@@ -38,7 +41,7 @@
   opacity: 0.8;
 }
 
-/* slideBanner */
+/************* slideBanner ************/
 #slideBannerGroup {
   width: 100%;
   height: 530px;
@@ -58,7 +61,7 @@
   height: 530px;
 }
 
-/* 배너 하단 control Button */
+/************* 배너 하단 control Button ************/
 #bannerControlGroup {
   margin: 0 auto;
   width: 160px;
@@ -67,4 +70,6 @@
 
 .bannerControl {
   margin: 15px 5px 0 5px;
+  width: 12px;
+  height: 12px;
 }

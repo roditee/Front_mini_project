@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/myFeed.css">
+    <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/myFeed.js"></script>
+    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header">
+                <div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
+                <div id="userManageBtn">
+                    <a href="./sub_myFeed.html">My Feed</a>
+                    <a href="./join.html">Join</a>
+                    <a href="./login.html">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <article>
+                <div id="profile">
+                    <h2 id="feedTitle">My Feed</h2><hr/>
+                    <div id="profileGroup">
+                        <div id="profileImgGroup">
+                            <img id="profileImg"src="./image/mbtiCtgItems01.png"/>
+                            <div id="profileEdit"><div><i class="fas fa-palette"></i>&nbsp;&nbsp;<span>미니미 수정</span></div></div>
+                        </div>
+                        <div id="profileInfoGroup">
+                            <div id="profileInfo">
+                                <h1>user01</h1>
+                                <div id="followGroup">
+                                    <h3>팔로워 <span>0</span></h3>&nbsp;&nbsp;&nbsp;
+                                    <h3>팔로잉 <span>0</span></h3>
+                                </div>
+                            </div>
+                            <div id="profileKeyword">
+                                    <button id="EditKeywordBtn">This is my Keyword</button>
+                                <div id="myKeywordGroup">
+                                    <button class="myKeyword">사교적</button>
+                                    <button class="myKeyword">활동적</button>
+                                    <button class="myKeyword">폭 넓은 대인관계</button>
+                                    <button class="myKeyword">논리적</button>
+                                    <button class="myKeyword">생각이 너무 많음</button>
+                                    <button class="myKeyword">분석적</button>
+                                    <button class="myKeyword">감정 표현을 못 함</button>
+                                    <button class="myKeyword">계획적</button>
+                                    <button class="myKeyword">남들 시선을 신경씀</button>
+                                    <button class="myKeyword">정의로움</button>
+                                    <button class="myKeyword">자기 주장 강함</button>
+                                    <button class="myKeyword">독창적</button>
+                                    <button class="myKeyword">배려가 많음</button>
+                                    <button class="myKeyword">책임감이 강함</button>
+                                    <button class="myKeyword">현실적</button>
+                                    <button class="myKeyword">호기심 많음</button>
+                                    <button class="myKeyword">모든 일에 의미 부여함</button>
+                                    <button class="myKeyword">갈등을 싫어함</button>
+                                    <button class="myKeyword">걱정이 많음</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div id="profileMusic">
+                    <h1>프로필 뮤직</h1>
+                    <div id="musicBtnGroup">
+                        <input type="button" class="musicBtn" id="musicPlay" value="PLAY">
+                        <input type="button" class="musicBtn" id="musicPause" value="PAUSE">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div id="wishGroup">
+                    <h1>찜 목록</h1>
+                    <div id="wishBtnGroup">
+                        <img id="prevWish" src="image/prevButton.png">
+						<img id="nextWish" src="image/nextButton.png">
+                    </div>
+                    <div id="wishList">
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                        <img class="wishItems" src="image/slide_img_02.jpg"></img>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div id="myPostGroup">
+                    <h1>내 게시글</h1>
+                    <div id="postList">
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                        <div class="postItems"></div>
+                    </div>
+                    <div id="seeMoreBox"><button id="seeMore">See More</button></div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <div id="footerInfo">
+                    <div id="info1">
+                        <h2>KIRRIKKIRI's 고객센터</h2>
+                        <h3>1588-7272</h3>
+                    </div>
+                    <div id="info2">
+                        상담시간&nbsp;|&nbsp;
+                        평일 10:00 ~ 17:00&nbsp;|&nbsp;
+                        주말, 공휴일 휴무&nbsp;|&nbsp;
+                        점심시간 12:00 ~ 13:00
+                    </div>
+                    <div id="info3">
+                        <a href="#">브랜드 스토리</a>&nbsp;|&nbsp;
+                        <a href="#">회사 소개</a>&nbsp;|&nbsp;
+                        <a href="#">채용 정보 </a>&nbsp;|&nbsp;
+                        <a href="#">이용 약관</a>&nbsp;|&nbsp;
+                        <a href="#">개인 정보 처리 방침</a>&nbsp;|&nbsp;
+                        <a href="#">이용 안내</a>&nbsp;|&nbsp;
+                        <a href="#">공지사항</a>&nbsp;|&nbsp;
+                        <a href="#">고객센터</a>&nbsp;|&nbsp;
+                        <a href="#">고객의 소리</a>&nbsp;|&nbsp;
+                        <a href="#">제휴/광고 문의</a>
+                    </div>
+                    <div id="info4">
+                        상호명 : (주) KIRRIKKIRI<br/>
+                        이메일(고객 문의) : kirrikkiri@mbti.com<br/>
+                        주소 : 코끼리아저시 코가손이구 727-2
+                    </div>
+                </div>
+                <div id="toTop">
+                    <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -4,7 +4,7 @@
 #mbtiCtgGroup {
   width: 100%;
   height: 300px;
-  background: rgb(192 192 199);
+  background: #f4f2f1;
   height: 205px;
   padding: 23px 0;
 }
@@ -27,8 +27,9 @@
 }
 
 .mbtiCtgItems a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .mbtiItemsText {
@@ -38,11 +39,11 @@
 /************* MBTI별 인기 아이템 ************/
 #hotItemsSection {
   width: 100%;
-  background: rgb(215 176 176);
+  background: #f4f2f1;
   padding: 35px 0;
 }
 
-#hotItems > h2 {
+#hotItemsSection > h2 {
   padding: 0px 13px 13px 38px;
 }
 
@@ -56,19 +57,22 @@
   height: 250px;
   border-radius: 20px;
   background: white;
-  border: 1px solid black;
   margin: 10px 0;
+}
+
+.hotItems:hover {
+  opacity: 0.8;
 }
 
 /************* 끼리's 추천 게시글 ************/
 #KIRRIRecommendSection {
   width: 100%;
   height: 450px;
-  background: rgb(157 172 155);
+  background: #f4f2f1;
   padding: 35px 0;
 }
 
-#KIRRIRecommend h2 {
+#KIRRIRecommendSection h2 {
   padding: 0px 13px 13px 38px;
 }
 .KIRRIRecommendGroup {
@@ -81,6 +85,9 @@
   height: 350px;
   border-radius: 20px;
   background: white;
-  border: 1px solid black;
   margin: 10px 0;
+}
+
+.KIRRIRecommendItems:hover {
+  opacity: 0.8;
 }

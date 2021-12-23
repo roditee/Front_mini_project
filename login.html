@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header">
+                <div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
+                <div id="userManageBtn">
+                    <a href="./sub_myFeed.html">My Feed</a>
+                    <a href="./join.html">Join</a>
+                    <a href="./login.html">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="login">
+            <div id="loginHeader">
+                <img id="loginLogoImg" src="./image/KIRRI.png"><span id="loginLogoText">Login</span>
+            </div>
+            <form id="loginForm" action="index.html">
+                <p id="loginError">ddddddddddddddd</p>
+                <input type="text" name="id" id="id" placeholder="아이디">
+                <input type="password" name="pw" id="pw" placeholder="비밀번호">
+                <input type="submit" name="submit" id="submit" value="로그인">
+            </form>
+            <div id="loginAnchor">
+                <a href="#">아이디/비밀번호 찾기</a>
+                <a href="./join.html">회원가입</a>
+            </div>
+            <div id="socialLiogin">
+                <p>social Login</p>
+                <div id="socialLoginBtn">
+                    <a href="https://about.facebook.com/ko/" target="_blank" class="socialBtn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.google.co.kr/" target="_blank" class="socialBtn"><i class="fab fa-google"></i></a>
+                    <a href="https://twitter.com/?lang=ko" target="_blank" class="socialBtn"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer">
+                <div id="footerInfo">
+                    <div id="info1">
+                        <h2>KIRRIKKIRI's 고객센터</h2>
+                        <h3>1588-7272</h3>
+                    </div>
+                    <div id="info2">
+                        상담시간&nbsp;|&nbsp;
+                        평일 10:00 ~ 17:00&nbsp;|&nbsp;
+                        주말, 공휴일 휴무&nbsp;|&nbsp;
+                        점심시간 12:00 ~ 13:00
+                    </div>
+                    <div id="info3">
+                        <a href="#">브랜드 스토리</a>&nbsp;|&nbsp;
+                        <a href="#">회사 소개</a>&nbsp;|&nbsp;
+                        <a href="#">채용 정보 </a>&nbsp;|&nbsp;
+                        <a href="#">이용 약관</a>&nbsp;|&nbsp;
+                        <a href="#">개인 정보 처리 방침</a>&nbsp;|&nbsp;
+                        <a href="#">이용 안내</a>&nbsp;|&nbsp;
+                        <a href="#">공지사항</a>&nbsp;|&nbsp;
+                        <a href="#">고객센터</a>&nbsp;|&nbsp;
+                        <a href="#">고객의 소리</a>&nbsp;|&nbsp;
+                        <a href="#">제휴/광고 문의</a>
+                    </div>
+                    <div id="info4">
+                        상호명 : (주) KIRRIKKIRI<br/>
+                        이메일(고객 문의) : kirrikkiri@mbti.com<br/>
+                        주소 : 코끼리아저시 코가손이구 727-2
+                    </div>
+                </div>
+                <div id="toTop">
+                    <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</html>

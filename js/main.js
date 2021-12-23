@@ -1,18 +1,32 @@
 /* main.js */
 
-// index.html 제외 나머지 페이지에서는 header 로그인/회원가입/마이피드 hidden
-
-
 $(function() {
-	// 윈도우 스크롤 시 메인 메뉴 고정
-	// $(window).on('scroll', function() {
-	// 	// 스크롤 되는 문서의 top이 #headerBox 이상이면 메인 메뉴 고정되고 그림자 표시
-	// 	if($(document).scrollTop() >= $('#headerBox').height()){
-	// 		$('#mainMenuBox').addClass('mainMenuFixed mainMenuShadow');
-	// 	}
-	// 	else $('#mainMenuBox').removeClass('mainMenuFixed mainMenuShadow');
-	// });
-	
+    //superMenu
+    var menuBtn = document.querySelector('.menu-btn');
+var nav = document.querySelector('nav');
+var lineOne = document.querySelector('nav .menu-btn .line--1');
+var lineTwo = document.querySelector('nav .menu-btn .line--2');
+var lineThree = document.querySelector('nav .menu-btn .line--3');
+var link = document.querySelector('nav .nav-links');
+menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+    lineOne.classList.toggle('line-cross');
+    lineTwo.classList.toggle('line-fade-out');
+    lineThree.classList.toggle('line-cross');
+    link.classList.toggle('fade-in');
+})
+
+    // subMenu
+    $('.menu>a').click(function() {
+        var hide = $(this).next('ul');
+        if (hide.is(":visible")){
+            hide.slideUp(1000);
+        } else {
+            hide.slideDown(1000);
+        }
+    });
+
+    // toTopBtn
 	$('#toTopBtn').on('click', function() {
         $('html, body').animate({scrollTop:0}, 500);
     });
