@@ -1,68 +1,56 @@
 /* mainBanner.js */
-
+console.clear();
+// 기존 버튼형 슬라이더
 $(function() {
-	var slideIdx = 0;
-	slideBanner(slideIdx);
-	
-	// 배너 이동 함수
-	function slideBanner(idx) {
-		slideIdx = idx;
-		
-		var slide = -(idx * 1500);
-		$('#slideBanner').animate({'left':slide}, 'slow');
-	}
-	
-	// prevBtn
-	$('#prevBtn').on('click', function() {
-		if (slideIdx!=0) slideIdx-=1;
-		
-		slideBanner(slideIdx);
-	});
-	
-	// nextBtn
-	$('#nextBtn').on('click', function() {
-		if (slideIdx!=4) slideIdx+=1;
-		
-		slideBanner(slideIdx);
-	});
-	
-	// bannerControl 버튼 : 클릭하여 원하는 인덱스의 배너로 이동
-	$('.bannerControl').each(function(idx) {
-		$(this).hover(
-			function() {
-				$(this).attr('src', 'image/controlButton2.png');
-			},
-			function() {
-				$(this).attr('src', 'image/controlButton1.png');
-			}
-		);
-		
-		$(this).on('click', function() {
-			slideBanner(idx);
-		});
-		
-	});
-		
-	// 자동 슬라이딩 함수
-	function slidingTimer(){
-		Sliding = setInterval(function(){
-			$('#nextBtn').trigger('click');
-			
-			if (slideIdx==4) slideIdx=0;
-			
-			slideBanner(slideIdx);
-		},3000);
-	}
+$('.slider-1 > .page-btns > div').click(function(){
+    var $this = $(this);
+    var index = $this.index();
+    
+    $this.addClass('active');
+    $this.siblings('.active').removeClass('active');
+    
+    var $slider = $this.parent().parent();
+    
+    var $current = $slider.find(' > .slides > div.active');
+    
+    var $post = $slider.find(' > .slides > div').eq(index);
+    
+    $current.removeClass('active');
+    $post.addClass('active');
+});
 
-	// 배너 영역에 마우스 올리면 자동 슬라이딩 정지
-	$('#slideBanner').on({
-		mouseenter:function(){
-			clearInterval(Sliding);
-		},
-		mouseleave:function(){
-			slidingTimer();
-		}
-	});
+// 좌/우 버튼 추가 슬라이더
+$('.slider-1 > .side-btns > div').click(function(){
+    var $this = $(this);
+    var $slider = $this.closest('.slider-1');
+    
+    var index = $this.index();
+    var isLeft = index == 0;
+    
+    var $current = $slider.find(' > .page-btns > div.active');
+    var $post;
+    
+    if ( isLeft ){
+        $post = $current.prev();
+    }
+    else {
+        $post = $current.next();
+    };
+    
+    if ( $post.length == 0 ){
+        if ( isLeft ){
+            $post = $slider.find(' > .page-btns > div:last-child');
+        }
+        else {
+            $post = $slider.find(' > .page-btns > div:first-child');
+        }
+    };
+    
+    $post.click();
+});
 
-	slidingTimer();
+setInterval(function(){
+    $('.slider-1 > .side-btns > div').eq(1).click();
+}, 3000);
+
 });

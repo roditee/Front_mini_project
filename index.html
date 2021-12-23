@@ -23,6 +23,7 @@
             <div id="header">
                 <div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
                 <div id="userManageBtn">
+                    <a href="sub_mbti.html">MBTI</a>
                     <a href="./sub_myFeed.html">My Feed</a>
                     <a href="./join.html">Join</a>
                     <a href="./login.html">Login</a>
@@ -49,9 +50,9 @@
                     </li>
                     <li class="menu link"><a href="#">MBTI</a>
                         <ul class="hide">
-                            <li class="subMenu"><a href="#">인기 게시글</a></li>
-                            <li class="subMenu"><a href="#">신규 게시글</a></li>
-                            <li class="subMenu"><a href="#">MBTI 유형별 특징</a></li>
+                            <li class="subMenu"><a href="#hotItemsSection">인기 게시글</a></li>
+                            <li class="subMenu"><a href="#KIRRIRecommendSection">KIRRI 추천 게시글</a></li>
+                            <li class="subMenu"><a href="./sub_mbti.html">MBTI 유형별 특징</a></li>
                         </ul>
                     </li>
                     <li class="menu link"><a href="#">KIRRI NEWS</a>
@@ -94,28 +95,28 @@
         </div>
 
         <section>
-            <article>
-                <div id="mainBanner">
-                    <div id="prevNextBtnGroup">
-                        <img id="prevBtn" src="image/prevButton.png">
-						<img id="nextBtn" src="image/nextButton.png">
+            <article>             
+                <div class="slider-1">
+                    <div class="slides">
+                        <div class="active" style="background-image:url(image/slide_img_01.jpg);">></div>
+                        <div style="background-image:url(image/slide_img_02.jpg);"></div>
+                        <div style="background-image:url(image/slide_img_03.jpg);"></div>
+                        <div style="background-image:url(image/slide_img_04.jpg);"></div>
+                        <div style="background-image:url(image/slide_img_05.jpg);"></div>
                     </div>
-                    <div id="slideBannerGroup">
-                        <div id="slideBanner">
-                            <!-- 배너 이미지 1500*480 -->
-                                <img class="bannerItems" src="image/slide_img_01.jpg">
-                                <img class="bannerItems" src="image/slide_img_02.jpg">
-                                <img class="bannerItems" src="image/slide_img_03.jpg">
-                                <img class="bannerItems" src="image/slide_img_04.jpg">
-                                <img class="bannerItems" src="image/slide_img_05.jpg">
+                    <div class="page-btns">
+                        <div class="active" style="background-image:url(image/slide_img_01.jpg);"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="side-btns">
+                        <div>
+                            <span><i class="fas fa-angle-left"></i></span>
                         </div>
-                    </div>
-                    <div id="bannerControlGroup">
-                        <img src="image/controlButton1.png" class="bannerControl">
-                        <img src="image/controlButton1.png" class="bannerControl">
-                        <img src="image/controlButton1.png" class="bannerControl">
-                        <img src="image/controlButton1.png" class="bannerControl">
-                        <img src="image/controlButton1.png" class="bannerControl">
+                        <div>
+                            <span><i class="fas fa-angle-right"></i></span>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -261,20 +262,193 @@
                 <div id="hotItemsSection">
                     <h2><span id="chooseMbti">INFP</span>의 인기 게시글</h2>
                     <div class="hotItemGroup">
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
+                        <ul class="class-list" data-position="0">
+                            <li class="class-card">
+                                <img src="./image/ss1.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card">
+                                <img src="./image/ss2.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card">
+                                <img src="./image/ss3.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card">
+                                <img src="./image/ss4.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card">
+                                <img src="./image/ss5.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card">
+                                <img src="./image/ss6.webp" alt="top1" class="class-image" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">게시글1</div>
+                                        <div class="class-format">Best1</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="hotItemGroup">
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
-                        <div class="hotItems"></div>
+                        <div class="hotItemGroup">
+                            <ul class="class-list" data-position="0">
+                                <li class="class-card">
+                                    <img src="./image/ss7.webp" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="class-card">
+                                    <img src="./image/ss8.jpg" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="class-card">
+                                    <img src="./image/ss9.jpg" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="class-card">
+                                    <img src="./image/ss10.jpg" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="class-card">
+                                    <img src="./image/ss11.jpg" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="class-card">
+                                    <img src="./image/ss12.webp" alt="top1" class="class-image" />
+                                    <a href="./sub_Post.html" target="_blank">
+                                        <div class="class-container">
+                                            <div class="class-skill">
+                                            <div class="class-type">게시글1</div>
+                                            <div class="class-format">Best1</div>
+                                            </div>
+                                            <div class="class-desc">
+                                            <div class="class-title">내용</div>
+                                            <div class="class-detail">내용</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </article>
@@ -283,9 +457,53 @@
                 <div id="KIRRIRecommendSection">
                     <h2>KIRRI's 추천 게시글</h2>
                     <div class="KIRRIRecommendGroup">
-                        <div class="KIRRIRecommendItems"></div>
-                        <div class="KIRRIRecommendItems"></div>
-                        <div class="KIRRIRecommendItems"></div>
+                        <ul class="class-list" data-position="0">
+                            <li class="class-card2">
+                                <img src="./image/ss13.webp" alt="top1" class="class-image2" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">추천1</div>
+                                        <div class="class-format">Recommend</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card2">
+                                <img src="./image/ss14.webp" alt="top1" class="class-image2" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">추천2</div>
+                                        <div class="class-format">Recommend</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="class-card2">
+                                <img src="./image/ss15.webp" alt="top1" class="class-image2" />
+                                <a href="./sub_Post.html" target="_blank">
+                                    <div class="class-container">
+                                        <div class="class-skill">
+                                        <div class="class-type">추천3</div>
+                                        <div class="class-format">Recommend</div>
+                                        </div>
+                                        <div class="class-desc">
+                                        <div class="class-title">내용</div>
+                                        <div class="class-detail">내용</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </article>

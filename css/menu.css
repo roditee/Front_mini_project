@@ -101,11 +101,12 @@ nav .nav-links .link:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-a {
+.link a {
   margin: 0 20px;
   color: rgb(70, 53, 40);
   font-size: 18px;
   transition: all 400ms ease;
+  font-size: 18px;
 }
 
 a:hover {
@@ -143,7 +144,4 @@ a:hover {
 
 .subMenu > a {
   text-decoration: none;
-}
-.link > a {
-  font-size: 18px;
 }

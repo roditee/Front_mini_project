@@ -80,8 +80,8 @@ body {
   text-align: center;
 }
 
-.information > p {
-  margin-top: 24px;
+.information p {
+  margin-top: 23px;
 }
 
 #hrhr {
@@ -212,6 +212,7 @@ img {
   cursor: pointer;
 }
 
+/* chatbot */
 #chatbot {
   position: fixed;
   top: 84%;

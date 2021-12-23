@@ -11,6 +11,17 @@ $(document).ready(function(){
 	})
 
 });
+$(document).ready(function(){
+	var colors = ["#d8e8f3" ,'white'];
+	var num = 0;
+	$('#btn1').on({
+		click:function(){
+			$(this).css('background-color',colors[num++]);
+			if(num == 2) num = 0;
+		}
+	})
+
+});
 
 
 $(function() {

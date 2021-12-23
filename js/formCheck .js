@@ -4,13 +4,6 @@
 
 window.onload = function() {
 	document.getElementById('joinForm').onsubmit = function() {
-		// if($(window).scrollTop() > $("#mainLogo").offset().top) {
-		// 	$(".white_content").css("position", "fixed");
-		// }
-		// else if(($(window).scrollTop() < $("#mainLogo").offset().top)) {
-		// 	$(".white_content").css("position", "static");
-		// }
-		
 		// name
 		var errMsgName = document.getElementById('nameError');
 		var name1 = document.getElementById('name');

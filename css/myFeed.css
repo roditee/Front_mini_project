@@ -223,12 +223,12 @@
 }
 
 .postItems {
-  width: 400px;
+  width: 363px;
   height: 500px;
   background: #c2d7de;
   border-radius: 35px;
   border: solid gray 1px;
-  margin: 10px;
+  margin: 10px 30px;
 }
 
 #seeMoreBox {
@@ -246,4 +246,17 @@
 
 #seeMore:hover {
   background: #c2d7de;
+}
+
+/************* chatbot ************/
+#chatbot {
+  position: fixed;
+  top: 84%;
+  left: 90%;
+  font-size: 50px;
+}
+
+#chatbot:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }

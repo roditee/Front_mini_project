@@ -96,3 +96,16 @@
 #footer {
   padding: 35px 150px;
 }
+
+/* chatbot */
+#chatbot {
+  position: fixed;
+  top: 84%;
+  left: 90%;
+  font-size: 50px;
+}
+
+#chatbot:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

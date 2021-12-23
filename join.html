@@ -11,6 +11,7 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="./js/formCheck .js"></script>
 <script src="./js/main.js"></script>
+<script src="js/chatbot.js"></script>
 <script src="https://kit.fontawesome.com/2d323a629b.js"crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,21 +38,21 @@
 							<table>
 								<br>
 								<tr>
-									<td class="col1">성명</td>
+									<td class="col1">성명 *</td>
 									<td class="col2">
 										<input type="text" name="name"  maxlength="5" id="name" placeholder="성명">
 										<p id="nameError" class="errMsg" value=""></p>
 									</td>
 								</tr>
 								<tr>
-									<td class="col1">아이디</td>
+									<td class="col1">아이디 *</td>
 									<td class="col2"><input type="text" name="id" maxlength="10" id="idCheck" value="" placeholder="아이디">
 										<input class='btn1' type="button" value="중복확인" onclick="">
 										<p id="idError" class="errMsg" value=""></p>
 									</td>
 								</tr>
 								<tr>
-									<td class="col1">비밀번호</td>
+									<td class="col1">비밀번호 *</td>
 									<td class="col2"><input type="password" name="pwd" maxlength="16" id="password" placeholder="비밀번호">
 										<p id="pwError" class="errMsg">
 											※ 비밀번호는 <span class="num">문자, 숫자, 특수문자(~!@#$%^&*)의 조합
@@ -60,11 +61,11 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="col1">비밀번호 확인</td>
+									<td class="col1">비밀번호 확인 *</td>
 									<td class="col2"><input type="password" name="pwdCheck" maxlength="16" id="passwordCheck" placeholder="비밀번호 확인"></td>
 								</tr>
 								<tr>
-									<td class="col1">이메일</td>
+									<td class="col1">이메일 *</td>
 									<td class="col2"><input type="text" name="mailid">
 										<span class="a">@</span> <input type="text" name="email">
 										<select name="mailslc">
@@ -84,7 +85,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="col1">생년월일</td>
+									<td class="col1">생년월일 *</td>
 									<td class="col2"><input type="text" name="birthYear" id="birthYear"size="4" maxlength="4">년 
 									<select name="birthMonth">
 											<option value="1">1
@@ -137,7 +138,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="col1">휴대폰번호</td>
+									<td class="col1">휴대폰번호 *</td>
 								<td class="col2">
 								<input type="text" name="hp1" id="hp1" size="3" maxlength="3">
 										- <input type="text" name="hp2" id="hp2" size="4" maxlength="4">
@@ -153,7 +154,7 @@
 							</tr>
 							</tr>
 								<tr>
-									<td class="col1">MBTI</td>
+									<td class="col1">MBTI *</td>
 									<td id="col2" align="center" >
 									<input type="radio" name="mbti" value="ISTJ" id="mbti1">ISTJ &nbsp;&nbsp;&nbsp;
 									<input type="radio" name="mbti" value="ISFJ" id="mbti2">ISFJ &nbsp;&nbsp;&nbsp;
@@ -270,7 +271,7 @@
 									</td>
 								</tr>
 							<tr>
-								<td class="col1">동의</td>
+								<td class="col1">동의 *</td>
 								<td>
 									<label><input type="checkbox" id="agreement1" value="모든약관" style="margin-left:10px;"> 모든 약관에 동의</label>&nbsp;&nbsp;
 									<label><input type="checkbox" id="agreement2" value="개인정보"> 개인 정보 이용 동의 (선택)</label>
@@ -296,8 +297,8 @@
                         <i id="toTopBtn" class="far fa-hand-point-up"></i>
                     </div>
                     <div id="chat">
-                        <a href="chatbot.html"><i id="chatbot" class="far fa-comment-alt"></i></a>
-                    </div>
+						<i id="chatbot" class="far fa-comment-alt"></i>
+					</div>
                 </div>
                 <div id="footerInfo">
                     <div id="info1">
