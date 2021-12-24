@@ -194,14 +194,28 @@ p {
   width: 10px;
 }
 .white_content::-webkit-scrollbar-thumb {
-  background-color: #2f3542;
+  background-color: #d1a880;
   border-radius: 10px;
 }
 .white_content::-webkit-scrollbar-track {
-  background-color: grey;
+  background-color: #f2dcac;
   border-radius: 10px;
   box-shadow: inset 0px 0px 5px white;
 }
+
+.agreebox::-webkit-scrollbar {
+  width: 10px;
+}
+.agreebox::-webkit-scrollbar-thumb {
+  background-color: #d1a880;
+  border-radius: 10px;
+}
+.agreebox::-webkit-scrollbar-track {
+  background-color: #f2dcac;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
 /* toTopBtn */
 #toTopBtn2 {
   position: fixed;

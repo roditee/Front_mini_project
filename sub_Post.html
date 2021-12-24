@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/sub_post.css">
     <title>KIRRIKKIRI : MBTI 기반 정보 공유</title>
@@ -21,6 +20,7 @@
             <div id="header">
                 <div id="mainLogo"><a href="./index.html"><h2>KIRRIKKIRI</h2></a></div>
                 <div id="userManageBtn">
+                    <a href="sub_mbti.html">MBTI</a>
                     <a href="./sub_myFeed.html">My Feed</a>
                     <a href="./join.html">Join</a>
                     <a href="./login.html">Login</a>
@@ -39,6 +39,7 @@
                 <ul id="menuGroup">
                     <li class="menu link"><a href="#">NOTICE</a>
                         <ul class="hide">
+                            <li class="subMenu"><a href="./index.html">HOME</a></li>
                             <li class="subMenu"><a href="#">공지사항</a></li>
                             <li class="subMenu"><a href="#">EVENT</a></li>
                             <li class="subMenu"><a href="#">FAQ</a></li>
@@ -46,9 +47,9 @@
                     </li>
                     <li class="menu link"><a href="#">MBTI</a>
                         <ul class="hide">
-                            <li class="subMenu"><a href="#">인기 게시글</a></li>
-                            <li class="subMenu"><a href="#">신규 게시글</a></li>
-                            <li class="subMenu"><a href="#">MBTI 유형별 특징</a></li>
+                            <li class="subMenu"><a href="#hotItemsSection">인기 게시글</a></li>
+                            <li class="subMenu"><a href="#KIRRIRecommendSection">KIRRI 추천 게시글</a></li>
+                            <li class="subMenu"><a href="./sub_mbti.html">MBTI 유형별 특징</a></li>
                         </ul>
                     </li>
                     <li class="menu link"><a href="#">KIRRI NEWS</a>
@@ -178,33 +179,30 @@
             <div id="Postmini">
                 <h2>이 게시글을 찜한 다른 사용자의 게시글</h2>
                 <div class="PostminiGroup">
-                    <a href="#">
                     <div class="PostminiItems">
-                        <img src="image/fashion1.jpg">
+                        <a href="sub_myFeed.html"><img src="image/fashion1.jpg"></a>
                     </div>
-                </a>
-                    <a href="#">
                     <div class="PostminiItems">
-                        <img src="image/fashion2.jpg">
+                        <a href="sub_myFeed.html"><img src="image/fashion2.jpg"></a>
                     </div>
                     </a>
                     <div class="PostminiItems">
-                        <img src="image/fashion3.jpg">
+                        <a href="sub_myFeed.html"><img src="image/fashion3.jpg"></a>
                     </div>
                     <div class="PostminiItems">
-                        <img src="image/fashion4.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/fashion4.jpeg"></a>
                     </div>
                     <div class="PostminiItems">
-                        <img src="image/fashion5.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/fashion5.jpeg"></a>
                     </div>
                     <div class="PostminiItems">
-                        <img src="image/fashion6.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/fashion6.jpeg"></a>
                     </div>
                     <div class="PostminiItems">
-                        <img src="image/fashion7.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/fashion7.jpeg"></a>
                     </div>
                     <div class="PostminiItems">
-                        <img src="image/fashion8.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/fashion8.jpeg"></a>
                     </div>
                 </div>
             </div>
@@ -214,24 +212,24 @@
                 <h2>추천 게시글</h2>
                 <div class="KIRRIRecommendGroup">
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen1.png">
+                        <a href="sub_myFeed.html"><img src="image/screen1.png"></a>
                     </div>
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen2.png">
+                        <a href="sub_myFeed.html"><img src="image/screen2.png"></a>
                     </div>
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen4.png">
+                        <a href="sub_myFeed.html"><img src="image/screen4.png"></a>
                     </div>
                 </div><br>
                 <div class="KIRRIRecommendGroup">
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen5.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/screen5.jpeg"></a>
                     </div>
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen3.png">
+                        <a href="sub_myFeed.html"><img src="image/screen3.png"></a>
                     </div>
                     <div class="KIRRIRecommendItems">
-                        <img src="image/screen9.jpeg">
+                        <a href="sub_myFeed.html"><img src="image/screen9.jpeg"></a>
                     </div>
                 </div>
             </div>
@@ -270,6 +268,9 @@
                 </div>
                 <div id="toTop">
                     <i id="toTopBtn" class="far fa-hand-point-up"></i>
+                </div>
+                <div id="chat">
+                    <i id="chatbot" class="far fa-comment-alt"></i>
                 </div>
             </div>
         </footer>

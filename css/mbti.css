@@ -106,8 +106,8 @@ p {
 
 .main {
   margin: 10px auto;
-  height: 200px; /* 화면 이미지 고정 */
-  background-image: url("https://cdn.pixabay.com/photo/2017/09/28/08/34/dog-2794681_960_720.jpg");
+  height: 363px; /* 화면 이미지 고정 */
+  background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJt4l4%2FbtroNIuqRZW%2FZeFUea80kyHKtlwkcZ4pQ0%2Fimg.jpg");
   background-position: center 30%; /* 이미지 위치를 살짝 위로 올리기 위한 position 설정 */
   background-repeat: no-repeat;
   z-index: 0;
@@ -115,11 +115,14 @@ p {
 
 /* 배경 이미지에 색상을 어둡게 하기 위해, 어두운 색상으로 이미지 상위에 투명도를 주어 덮어씌움 */
 .main-container {
-  width: 50%;
-  height: 100%;
+  width: 16%;
+  height: 75%;
   background-color: rgb(114, 114, 131);
   opacity: 0;
   z-index: 0;
+  position: relative;
+  top: 13px;
+  left: 520px;
 }
 
 section {
@@ -157,7 +160,7 @@ img {
   position: absolute;
   top: 25%;
   left: 35%;
-  width: 25%;
+  width: 30%;
   height: 45%;
   padding: 16px;
   border: 10px solid #e2c3c3;

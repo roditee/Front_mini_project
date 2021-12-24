@@ -1,6 +1,6 @@
 /* mainBanner.js */
 console.clear();
-// 기존 버튼형 슬라이더
+// 버튼형 슬라이더
 $(function() {
 $('.slider-1 > .page-btns > div').click(function(){
     var $this = $(this);
@@ -19,7 +19,7 @@ $('.slider-1 > .page-btns > div').click(function(){
     $post.addClass('active');
 });
 
-// 좌/우 버튼 추가 슬라이더
+// 좌/우 버튼 슬라이더
 $('.slider-1 > .side-btns > div').click(function(){
     var $this = $(this);
     var $slider = $this.closest('.slider-1');
@@ -49,8 +49,22 @@ $('.slider-1 > .side-btns > div').click(function(){
     $post.click();
 });
 
-setInterval(function(){
-    $('.slider-1 > .side-btns > div').eq(1).click();
-}, 3000);
+// 자동 슬라이딩 함수
+function slidingTimer(){
+    Sliding = setInterval(function(){
+        $('.slider-1 > .side-btns > div').eq(1).click();
+    }, 4000);
+}
 
+// 배너 영역에 마우스 올리면 자동 슬라이딩 정지
+$('.slider-1').on({
+    mouseenter:function(){
+        clearInterval(Sliding);
+    },
+    mouseleave:function(){
+        slidingTimer();
+    }
+});
+
+slidingTimer();
 });

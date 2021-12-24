@@ -26,7 +26,7 @@ $(function() {
 
 	/************* profileMusic ************/
 	var myMusic = new Audio('music.wav');
-	myMusic.volume=0.4;
+	myMusic.volume=0.7;
     
 	$('#musicPlay').on('click', function() {
 		myMusic.play();
